@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Lejar - 90s Edition</title>
+    <title>Portofolio Lejar </title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,6 +26,7 @@
                     <p>Nama: Himerius Jalulejar Sahasika</p>
                     <p>Status: Pelajar</p>
                     <p>Keahlian: HTML, CSS, Python </p>
+                    <p>Hobi : Bermain Game</p>
                     <a href="#kontak" class="button">✉️ E-mail Me</a>
                 </div>
             </div>
@@ -35,6 +36,57 @@
                 <div class="window-content">
                     <a href="#proyek">📂 My Projects</a>
                     <a href="#kontak">☎️ Contact Me</a>
+                    <!DOCTYPE html>
+ 
+<html> 
+<head>
+<title>Jam Digital</title>
+<style>
+  #clock {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 5px;
+    font-family: Arial, sans-serif;
+  }
+</style>
+</head>
+<body>
+
+<div id="clock"></div>
+
+<script>
+  function updateClock() {
+    // 1. Membuat objek Date baru untuk mendapatkan waktu saat ini
+    const now = new Date();
+
+    // 2. Mendapatkan jam, menit, dan detik
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
+
+    // 3. Menambahkan nol di depan angka jika kurang dari 10 (misal: 9 menjadi 09)
+    hours = hours < 10 ? '0' + hours : hours;
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+
+    // 4. Membentuk string waktu (HH:MM:SS)
+    const timeString = hours + ':' + minutes + ':' + seconds;
+
+    // 5. Menampilkan waktu di elemen HTML dengan id="clock"
+    document.getElementById('clock').textContent = timeString;
+  }
+
+  // Panggil fungsi updateClock() sekali untuk menampilkan waktu segera
+  updateClock();
+
+  // Memanggil fungsi updateClock() setiap 1000 milidetik (1 detik)
+  // Ini yang membuat jam terus diperbarui.
+  setInterval(updateClock, 1000);
+</script>
+
+</body>
+</html>
+
                 </div>
              </div>
         </aside>
@@ -74,10 +126,17 @@
                 <div class="window-content">
                     <h2>:: Contact Me ::</h2>
                     <p>Email: jalulejar.20@gmail.com</p>
+                    <p><p>&copy; 2025 Lejar hak cipta dilindungi</p>
+</p>
+
+
+                
                 </div>
             </div>
 
+            
+
+            
+
         </section>
     </main>
-
-
